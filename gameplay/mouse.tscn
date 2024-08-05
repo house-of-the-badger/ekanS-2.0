@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5ddu01jkuif5"]
+
+[ext_resource type="Script" path="res://gameplay/mouse.gd" id="1_x5rye"]
+[ext_resource type="Texture2D" uid="uid://bt4j14dfpp1ic" path="res://gameplay/sprites/Asset 12ekans-pixel-art.png" id="2_vwcuc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i8jal"]
+radius = 19.0
+
+[node name="Mouse" type="CharacterBody2D" groups=["mouse"]]
+position = Vector2(32, 48)
+motion_mode = 1
+script = ExtResource("1_x5rye")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.08165e-12, 2.08165e-12)
+texture = ExtResource("2_vwcuc")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.08165e-12, 2.08165e-12)
+shape = SubResource("CircleShape2D_i8jal")
