@@ -22,3 +22,11 @@ func _on_quit_button_pressed() -> void:
 func _on_tutorial_pressed():
 	var tutorial = tutorial_scene.instantiate()
 	get_parent().add_child(tutorial)
+
+
+func _on_signup_button_pressed():
+	get_tree().change_scene_to_file("res://menus/sign-up.tscn")
+
+
+func _on_login_button_pressed():
+	get_tree().change_scene_to_file("res://menus/Login.tscn")

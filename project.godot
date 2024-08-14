@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ekanS"
-run/main_scene="res://menus/sign-up.tscn"
+run/main_scene="res://menus/start_screen.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 boot_splash/bg_color=Color(1, 1, 1, 1)
 boot_splash/image="res://Assets/house-of-the-badger-logo2-01.png"
@@ -24,6 +24,7 @@ Global="*res://autoloads/global.gd"
 Firebase="*res://addons/godot-firebase/firebase/firebase.tscn"
 DatabaseManager="*res://autoloads/database_manager.gd"
 Music="*res://autoloads/music.tscn"
+LevelsManager="*res://autoloads/levels_manager.gd"
 
 [display]
 
