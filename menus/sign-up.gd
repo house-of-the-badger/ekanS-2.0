@@ -32,3 +32,7 @@ func on_signup_failed(error_code, message):
 func _on_login_button_pressed():
 	get_tree().change_scene_to_file("res://menus/Login.tscn")
 
+
+
+func _on_back_button_pressed():
+	get_tree().change_scene_to_file("res://menus/start_screen.tscn")

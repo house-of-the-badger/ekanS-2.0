@@ -102,6 +102,7 @@ horizontal_alignment = 1
 
 [node name="ScoreLabel" type="Label" parent="Panel/HBoxContainer/VBoxContainer"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 text = "Highest Score: 0"
 horizontal_alignment = 1
@@ -115,8 +116,19 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "Start"
 
+[node name="SignupButton" type="Button" parent="Panel/HBoxContainer/VBoxContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Signup"
+
+[node name="LoginButton" type="Button" parent="Panel/HBoxContainer/VBoxContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Login"
+
 [node name="Tutorial" type="Button" parent="Panel/HBoxContainer/VBoxContainer/GridContainer"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 theme_override_colors/font_pressed_color = Color(0.941176, 0.941176, 0.941176, 1)
 theme_override_colors/font_hover_color = Color(0.941176, 0.941176, 0.941176, 1)
@@ -137,5 +149,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_4wmxn")
 text = "Quit"
 
 [connection signal="pressed" from="Panel/HBoxContainer/VBoxContainer/GridContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/VBoxContainer/GridContainer/SignupButton" to="." method="_on_signup_button_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/VBoxContainer/GridContainer/LoginButton" to="." method="_on_login_button_pressed"]
 [connection signal="pressed" from="Panel/HBoxContainer/VBoxContainer/GridContainer/Tutorial" to="." method="_on_tutorial_pressed"]
 [connection signal="pressed" from="Panel/HBoxContainer/VBoxContainer/GridContainer/QuitButton" to="." method="_on_quit_button_pressed"]

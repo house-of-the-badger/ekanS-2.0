@@ -4,6 +4,7 @@ extends Node
 const level_element_scene = preload("res://menus/level_item.tscn")
 
 func _ready():
+	Firebase.Auth.login_anonymous()
 	for level in LevelsManager.levels:
 		var spawned_element = level_element_scene.instantiate()
 		

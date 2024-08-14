@@ -148,5 +148,11 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_77jrd")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_jye2k")
 text = "Sign Up"
 
+[node name="BackButton" type="Button" parent="Panel/HBoxContainer/MarginContainer/VBoxContainer/ButtonsMargin/ButtonsGrid"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Go Back"
+
 [connection signal="pressed" from="Panel/HBoxContainer/MarginContainer/VBoxContainer/ButtonsMargin/ButtonsGrid/LoginButton" to="." method="_on_login_button_pressed"]
 [connection signal="pressed" from="Panel/HBoxContainer/MarginContainer/VBoxContainer/ButtonsMargin/ButtonsGrid/SignupButton" to="." method="_on_signup_button_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/MarginContainer/VBoxContainer/ButtonsMargin/ButtonsGrid/BackButton" to="." method="_on_back_button_pressed"]
